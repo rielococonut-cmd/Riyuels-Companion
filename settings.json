@@ -11,7 +11,6 @@
     "version": "1.21.1",
     "try-creative": false
   },
-  "keep-alive": false,
   "position": {
     "enabled": true,
     "x": 0,
