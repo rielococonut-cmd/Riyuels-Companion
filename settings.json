@@ -1,12 +1,12 @@
 {
-  "name": "John Cena",
+  "name": "John_Cena",
   "bot-account": {
     "username": "johnyacantseenathing0",
     "password": "",
     "type": "offline"
   },
   "server": {
-    "ip": "Schmlorpufian.aternos.me",
+    "ip": "cavefish.aternos.host:18786",
     "port": 18786,
     "version": "",
     "try-creative": false
