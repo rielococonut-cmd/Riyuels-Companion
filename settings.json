@@ -11,6 +11,8 @@
     "version": "",
     "try-creative": false
   },
+  "keep-alive": true
+}
   "position": {
     "enabled": true,
     "x": 0,
