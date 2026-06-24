@@ -2062,6 +2062,39 @@ process.on("SIGINT", () => {
   addLog("[System] SIGINT received — ignoring, bot will stay alive.");
 });
 
+// Command handler: Type "!give" in game chat
+bot.on('chat', async (username, message) => {
+  if (username === bot.username) return; // Ignore itself
+  
+  if (message.toLowerCase() === '!give') {
+    const playerEntity = bot.players[username]?.entity;
+    if (!playerEntity) {
+      bot.chat(`I can't see you, ${username}! Come closer.`);
+      return;
+    }
+
+    bot.chat(`Dropping items for you, ${username}!`);
+    
+    // Look at the player
+    await bot.lookAt(playerEntity.position.offset(0, 1.6, 0));
+
+    // Drop items in inventory
+    const items = bot.inventory.items();
+    if (items.length === 0) {
+      bot.chat("My inventory is empty!");
+      return;
+    }
+
+    for (const item of items) {
+      try {
+        await bot.tossStack(item);
+      } catch (err) {
+        console.log(`Failed to toss item: ${err.message}`);
+      }
+    }
+  }
+});
+
 // =============================
 //===============================
 // START THE BOT
