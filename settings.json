@@ -30,11 +30,15 @@
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 120,
+      "repeat-delay": 150,
       "messages": [
         "You can't see me!",
-        "mwehehehehe...",
-        "epstein is a dork"
+        "Create the things you wish existed",
+        "after every rain is a beautiful rainbow :3",
+        "Its not hard... it's just new",
+        "The eyes are useless when the mind is blind",
+        "Mistakes are meant to guide you... not define you",
+        "hey chat"
       ]
     },
     "chat-log": true,
@@ -46,7 +50,7 @@
     "enabled": true,
     "circle-walk": {
       "enabled": true,
-      "radius": 4,
+      "radius": 6,
       "speed": 3000
     },
     "look-around": {
@@ -55,7 +59,7 @@
     },
     "random-jump": {
       "enabled": true,
-      "interval": 10000
+      "interval": 5000
     }
   },
   "modules": {
