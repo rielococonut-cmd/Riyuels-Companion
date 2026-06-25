@@ -8,7 +8,7 @@
   "server": {
     "ip": "Schmlorpufian.aternos.me",
     "port": 18786,
-    "version": "1.21.1",
+    "version": "",
     "try-creative": false
   },
   "position": {
@@ -29,63 +29,31 @@
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 150,
+      "repeat-delay": 300,
       "messages": [
         "You can't see me!",
-        "Create the things you wish existed",
-        "after every rain is a beautiful rainbow :3",
-        "Its not hard... it's just new",
-        "The eyes are useless when the mind is blind",
-        "Mistakes are meant to guide you... not define you",
-        "hey chat"
+        "Create the things you wish existed"
       ]
     },
     "chat-log": true,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 2000,
-    "max-reconnect-delay": 120000
+    "auto-reconnect-delay": 5000,
+    "max-reconnect-delay": 30000
   },
   "movement": {
     "enabled": true,
     "circle-walk": {
-      "enabled": true,
+      "enabled": false,
       "radius": 6,
-      "speed": 3000
+      "speed": 8000
     },
     "look-around": {
       "enabled": true,
-      "interval": 5000
+      "interval": 10000
     },
     "random-jump": {
       "enabled": true,
-      "interval": 5000
+      "interval": 15000
     }
-  },
-  "modules": {
-    "avoidMobs": true,
-    "combat": true,
-    "beds": false,
-    "chat": true,
-    "console-commands": true
-  },
-  "combat": {
-    "attack-mobs": true,
-    "auto-eat": true
-  },
-  "beds": {
-    "pick-up-day": false,
-    "place-night": false
-  },
-  "discord": {
-    "enabled": false,
-    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
-    "events": {
-      "connect": true,
-      "disconnect": true,
-      "chat": false
-    }
-  },
-  "chat": {
-    "respond": true
   }
 }
